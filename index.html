@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Github Search Using Vanilla JS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="searchBox">
+            <input type="text" id="search" placeholder="Search username...">
+            <button id="btn-searcher" onclick="findUser()">Search</button>
+        </div>
+        <div id="userAndRepos">
+            <div id="userInfo">
+                <div id="col-left">
+                    <img id="githubImage" alt="Profile Image">
+                </div>
+                <div id="col-right">
+                    <i>
+                        <span id="username"></span>
+                    </i>
+                    <br>
+                    <span id="fullname"></span>
+                    <br>
+                    <span id="userBio"></span>
+                </div>
+            </div>
+            <h3 id="line">
+                <span id="repositories">Repositories</span>
+            </h3>
+            <div id="userRepos"></div>
+        </div>
+
+        <section id="error">
+            <span>Does not exist!</span>
+        </section>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
